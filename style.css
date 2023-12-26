@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 105vh;
+    background: linear-gradient(90deg, rgb(72, 208, 208), blueViolet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(36, 36, 94);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+    box-shadow: 20px 20px 3px 10px white;
+}
+.hader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(42, 42, 109);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    color: azure;
+    text-shadow: 5px 5px 0px black;
+}
+.questionario{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+.numberAnswer{
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    color:rgb(255, 255, 255);
+    margin: 40px;
+    background-color: transparent;
+}
+.numberAnswer::placeholder{
+    color: white;
+}
+.numberAnswer:focus{
+    color: red;
+}
+.submit{
+    width: 150px;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2rem;
+    color: white;
+}
+.submit:hover{
+    background:linear-gradient(90deg, rgba(72, 208, 208, ), rgba(137, 43, 226,));
+    color: rgb(255, 255, 255);
+    transition: 2s;
+    animation: background-animation 500ms linear infinite;
+}
+.number{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+}
+@keyframes background-animation{
+
+    0%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0), rgba(137, 43, 226, 0));
+    }
+    10%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.1), rgba(137, 43, 226, 0.1));
+    }
+    20%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.2), rgba(137, 43, 226, 0.2));
+    }
+    30%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.3), rgba(137, 43, 226, 0.3));
+    }
+    50%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.5), rgba(137, 43, 226, 0.5));
+    }
+    60%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.6), rgba(137, 43, 226, 0.6));
+    }
+    70%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.7), rgba(137, 43, 226, 0.7));
+    }
+    80%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.8), rgba(137, 43, 226, 0.8));
+    }
+    90%{
+        background:linear-gradient(90deg, rgba(72, 208, 208, 0.9), rgba(137, 43, 226, 0.9));
+    }
+   
+    100%{
+        background:linear-gradient(90deg, rgb(72, 208, 208), rgb(137, 43, 226));
+    }
+}
+
+
